@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5201742A1682DA8100BCBA71 /* icon-pull-to-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 520174231682DA8100BCBA71 /* icon-pull-to-refresh.png */; };
+		5201742B1682DA8100BCBA71 /* icon-pull-to-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520174241682DA8100BCBA71 /* icon-pull-to-refresh@2x.png */; };
+		5201742C1682DA8100BCBA71 /* icon-release-to-refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 520174251682DA8100BCBA71 /* icon-release-to-refresh.png */; };
+		5201742D1682DA8100BCBA71 /* icon-release-to-refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 520174261682DA8100BCBA71 /* icon-release-to-refresh@2x.png */; };
+		5201742E1682DA8100BCBA71 /* SBPullToRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 520174281682DA8100BCBA71 /* SBPullToRefreshHeaderView.m */; };
+		5201742F1682DA8100BCBA71 /* SBPullToRefreshHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520174291682DA8100BCBA71 /* SBPullToRefreshHeaderView.xib */; };
+		520174321682DE5700BCBA71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 520174311682DE5700BCBA71 /* QuartzCore.framework */; };
+		D13031E116804AF4001EECCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13031E016804AF4001EECCC /* UIKit.framework */; };
+		D13031E316804AF4001EECCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13031E216804AF4001EECCC /* Foundation.framework */; };
+		D13031E516804AF4001EECCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D13031E416804AF4001EECCC /* CoreGraphics.framework */; };
+		D13031F116804AF4001EECCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D13031F016804AF4001EECCC /* AppDelegate.m */; };
+		D13031FA16804AF4001EECCC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13031F916804AF4001EECCC /* MasterViewController.m */; };
+		D13031FD16804AF4001EECCC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13031FC16804AF4001EECCC /* DetailViewController.m */; };
+		D130320016804AF4001EECCC /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13031FE16804AF4001EECCC /* MasterViewController.xib */; };
+		D130320316804AF4001EECCC /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D130320116804AF4001EECCC /* DetailViewController.xib */; };
+		D130323F1680ADCE001EECCC /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D130323D1680ADCE001EECCC /* BookmarkViewController.m */; };
+		D13032401680ADCE001EECCC /* BookmarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D130323E1680ADCE001EECCC /* BookmarkViewController.xib */; };
+		D13032441680AE16001EECCC /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13032421680AE16001EECCC /* SettingViewController.m */; };
+		D13032451680AE16001EECCC /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13032431680AE16001EECCC /* SettingViewController.xib */; };
+		D13032611680B5C3001EECCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D13032601680B5C3001EECCC /* main.m */; };
+		D13032641680B5CB001EECCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D13032631680B5CB001EECCC /* InfoPlist.strings */; };
+		D13032721680B954001EECCC /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = D13032711680B954001EECCC /* Connection.m */; };
+		D130327F1680C47E001EECCC /* Bookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = D130327E1680C47E001EECCC /* Bookmark.m */; };
+		D13032F7168219B1001EECCC /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D13032F6168219B1001EECCC /* User.m */; };
+		D13033421682BCE9001EECCC /* tabbar_board.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033371682BCE9001EECCC /* tabbar_board.png */; };
+		D13033431682BCE9001EECCC /* tabbar_board@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033381682BCE9001EECCC /* tabbar_board@2x.png */; };
+		D13033441682BCE9001EECCC /* tabbar_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033391682BCE9001EECCC /* tabbar_bookmark.png */; };
+		D13033451682BCE9001EECCC /* tabbar_bookmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D130333A1682BCE9001EECCC /* tabbar_bookmark@2x.png */; };
+		D13033461682BCE9001EECCC /* tabbar_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = D130333B1682BCE9001EECCC /* tabbar_setting.png */; };
+		D13033471682BCE9001EECCC /* tabbar_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D130333C1682BCE9001EECCC /* tabbar_setting@2x.png */; };
+		D13033891683197D001EECCC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033861683197D001EECCC /* Default-568h@2x.png */; };
+		D130338A1683197D001EECCC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033871683197D001EECCC /* Default.png */; };
+		D130338B1683197D001EECCC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D13033881683197D001EECCC /* Default@2x.png */; };
+		D130339D16831D41001EECCC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D130339B16831D41001EECCC /* icon.png */; };
+		D130339E16831D41001EECCC /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D130339C16831D41001EECCC /* icon@2x.png */; };
+		D15B926716A2D9CF00C37EBF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D15B926216A2D9CF00C37EBF /* LICENSE */; };
+		D15B926816A2D9CF00C37EBF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D15B926316A2D9CF00C37EBF /* README.md */; };
+		D15B926916A2D9CF00C37EBF /* UITextView+PinchZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = D15B926516A2D9CF00C37EBF /* UITextView+PinchZoom.m */; };
+		D15B926A16A2D9CF00C37EBF /* UITextView+PinchZoom.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D15B926616A2D9CF00C37EBF /* UITextView+PinchZoom.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520174231682DA8100BCBA71 /* icon-pull-to-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-pull-to-refresh.png"; sourceTree = "<group>"; };
+		520174241682DA8100BCBA71 /* icon-pull-to-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-pull-to-refresh@2x.png"; sourceTree = "<group>"; };
+		520174251682DA8100BCBA71 /* icon-release-to-refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-release-to-refresh.png"; sourceTree = "<group>"; };
+		520174261682DA8100BCBA71 /* icon-release-to-refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-release-to-refresh@2x.png"; sourceTree = "<group>"; };
+		520174271682DA8100BCBA71 /* SBPullToRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPullToRefreshHeaderView.h; sourceTree = "<group>"; };
+		520174281682DA8100BCBA71 /* SBPullToRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPullToRefreshHeaderView.m; sourceTree = "<group>"; };
+		520174291682DA8100BCBA71 /* SBPullToRefreshHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPullToRefreshHeaderView.xib; sourceTree = "<group>"; };
+		520174311682DE5700BCBA71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D13031DC16804AF4001EECCC /* NitechStudentBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NitechStudentBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13031E016804AF4001EECCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D13031E216804AF4001EECCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D13031E416804AF4001EECCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D13031EF16804AF4001EECCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D13031F016804AF4001EECCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D13031F816804AF4001EECCC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		D13031F916804AF4001EECCC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		D13031FB16804AF4001EECCC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D13031FC16804AF4001EECCC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D13031FF16804AF4001EECCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		D130320216804AF4001EECCC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		D130323C1680ADCE001EECCC /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
+		D130323D1680ADCE001EECCC /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		D130323E1680ADCE001EECCC /* BookmarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkViewController.xib; sourceTree = "<group>"; };
+		D13032411680AE16001EECCC /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		D13032421680AE16001EECCC /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		D13032431680AE16001EECCC /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		D13032511680B3D6001EECCC /* NitechStudentBoard-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "NitechStudentBoard-Info.plist"; path = "NitechStudentBoard/NitechStudentBoard-Info.plist"; sourceTree = "<group>"; };
+		D13032601680B5C3001EECCC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NitechStudentBoard/main.m; sourceTree = "<group>"; };
+		D13032631680B5CB001EECCC /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = NitechStudentBoard/InfoPlist.strings; sourceTree = "<group>"; };
+		D13032651680B5D3001EECCC /* NitechStudentBoard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NitechStudentBoard-Prefix.pch"; path = "NitechStudentBoard/NitechStudentBoard-Prefix.pch"; sourceTree = "<group>"; };
+		D13032701680B954001EECCC /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		D13032711680B954001EECCC /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		D130327D1680C47E001EECCC /* Bookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmark.h; sourceTree = "<group>"; };
+		D130327E1680C47E001EECCC /* Bookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmark.m; sourceTree = "<group>"; };
+		D13032F5168219B1001EECCC /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		D13032F6168219B1001EECCC /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		D13033371682BCE9001EECCC /* tabbar_board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_board.png; path = Images/tabbar_board.png; sourceTree = "<group>"; };
+		D13033381682BCE9001EECCC /* tabbar_board@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_board@2x.png"; path = "Images/tabbar_board@2x.png"; sourceTree = "<group>"; };
+		D13033391682BCE9001EECCC /* tabbar_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_bookmark.png; path = Images/tabbar_bookmark.png; sourceTree = "<group>"; };
+		D130333A1682BCE9001EECCC /* tabbar_bookmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_bookmark@2x.png"; path = "Images/tabbar_bookmark@2x.png"; sourceTree = "<group>"; };
+		D130333B1682BCE9001EECCC /* tabbar_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar_setting.png; path = Images/tabbar_setting.png; sourceTree = "<group>"; };
+		D130333C1682BCE9001EECCC /* tabbar_setting@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar_setting@2x.png"; path = "Images/tabbar_setting@2x.png"; sourceTree = "<group>"; };
+		D13033861683197D001EECCC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		D13033871683197D001EECCC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		D13033881683197D001EECCC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Default@2x.png"; sourceTree = "<group>"; };
+		D130339B16831D41001EECCC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Images/icon.png; sourceTree = "<group>"; };
+		D130339C16831D41001EECCC /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "Images/icon@2x.png"; sourceTree = "<group>"; };
+		D15B926216A2D9CF00C37EBF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D15B926316A2D9CF00C37EBF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D15B926416A2D9CF00C37EBF /* UITextView+PinchZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+PinchZoom.h"; sourceTree = "<group>"; };
+		D15B926516A2D9CF00C37EBF /* UITextView+PinchZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+PinchZoom.m"; sourceTree = "<group>"; };
+		D15B926616A2D9CF00C37EBF /* UITextView+PinchZoom.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UITextView+PinchZoom.podspec"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D13031D916804AF4001EECCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520174321682DE5700BCBA71 /* QuartzCore.framework in Frameworks */,
+				D13031E116804AF4001EECCC /* UIKit.framework in Frameworks */,
+				D13031E316804AF4001EECCC /* Foundation.framework in Frameworks */,
+				D13031E516804AF4001EECCC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		520174211682DA8100BCBA71 /* SBPullToRefreshHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				520174221682DA8100BCBA71 /* Resources */,
+				520174271682DA8100BCBA71 /* SBPullToRefreshHeaderView.h */,
+				520174281682DA8100BCBA71 /* SBPullToRefreshHeaderView.m */,
+				520174291682DA8100BCBA71 /* SBPullToRefreshHeaderView.xib */,
+			);
+			path = SBPullToRefreshHeaderView;
+			sourceTree = "<group>";
+		};
+		520174221682DA8100BCBA71 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				520174231682DA8100BCBA71 /* icon-pull-to-refresh.png */,
+				520174241682DA8100BCBA71 /* icon-pull-to-refresh@2x.png */,
+				520174251682DA8100BCBA71 /* icon-release-to-refresh.png */,
+				520174261682DA8100BCBA71 /* icon-release-to-refresh@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D13031D116804AF4001EECCC = {
+			isa = PBXGroup;
+			children = (
+				D13031E616804AF4001EECCC /* NitechStudentBoard */,
+				D130324A1680B376001EECCC /* Supporting Files */,
+				D13033031682263B001EECCC /* Images */,
+				D13031DF16804AF4001EECCC /* Frameworks */,
+				D13031DD16804AF4001EECCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D13031DD16804AF4001EECCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13031DC16804AF4001EECCC /* NitechStudentBoard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D13031DF16804AF4001EECCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				520174311682DE5700BCBA71 /* QuartzCore.framework */,
+				D13031E016804AF4001EECCC /* UIKit.framework */,
+				D13031E216804AF4001EECCC /* Foundation.framework */,
+				D13031E416804AF4001EECCC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D13031E616804AF4001EECCC /* NitechStudentBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D15B926116A2D9CF00C37EBF /* UITextView-PinchZoom-master */,
+				520174211682DA8100BCBA71 /* SBPullToRefreshHeaderView */,
+				D130326A1680B84C001EECCC /* Model */,
+				D13032461680B0DD001EECCC /* View */,
+				D13032471680B0F7001EECCC /* Controller */,
+			);
+			path = NitechStudentBoard;
+			sourceTree = "<group>";
+		};
+		D13032461680B0DD001EECCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D13031FE16804AF4001EECCC /* MasterViewController.xib */,
+				D130320116804AF4001EECCC /* DetailViewController.xib */,
+				D130323E1680ADCE001EECCC /* BookmarkViewController.xib */,
+				D13032431680AE16001EECCC /* SettingViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		D13032471680B0F7001EECCC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D13031EF16804AF4001EECCC /* AppDelegate.h */,
+				D13031F016804AF4001EECCC /* AppDelegate.m */,
+				D13031F816804AF4001EECCC /* MasterViewController.h */,
+				D13031F916804AF4001EECCC /* MasterViewController.m */,
+				D13031FB16804AF4001EECCC /* DetailViewController.h */,
+				D13031FC16804AF4001EECCC /* DetailViewController.m */,
+				D130323C1680ADCE001EECCC /* BookmarkViewController.h */,
+				D130323D1680ADCE001EECCC /* BookmarkViewController.m */,
+				D13032411680AE16001EECCC /* SettingViewController.h */,
+				D13032421680AE16001EECCC /* SettingViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		D130324A1680B376001EECCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D13032511680B3D6001EECCC /* NitechStudentBoard-Info.plist */,
+				D13032631680B5CB001EECCC /* InfoPlist.strings */,
+				D13032601680B5C3001EECCC /* main.m */,
+				D13032651680B5D3001EECCC /* NitechStudentBoard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D130326A1680B84C001EECCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D13032F5168219B1001EECCC /* User.h */,
+				D13032F6168219B1001EECCC /* User.m */,
+				D130327D1680C47E001EECCC /* Bookmark.h */,
+				D130327E1680C47E001EECCC /* Bookmark.m */,
+				D13032701680B954001EECCC /* Connection.h */,
+				D13032711680B954001EECCC /* Connection.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D13033031682263B001EECCC /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D130339B16831D41001EECCC /* icon.png */,
+				D130339C16831D41001EECCC /* icon@2x.png */,
+				D13033861683197D001EECCC /* Default-568h@2x.png */,
+				D13033871683197D001EECCC /* Default.png */,
+				D13033881683197D001EECCC /* Default@2x.png */,
+				D13033371682BCE9001EECCC /* tabbar_board.png */,
+				D13033381682BCE9001EECCC /* tabbar_board@2x.png */,
+				D13033391682BCE9001EECCC /* tabbar_bookmark.png */,
+				D130333A1682BCE9001EECCC /* tabbar_bookmark@2x.png */,
+				D130333B1682BCE9001EECCC /* tabbar_setting.png */,
+				D130333C1682BCE9001EECCC /* tabbar_setting@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D15B926116A2D9CF00C37EBF /* UITextView-PinchZoom-master */ = {
+			isa = PBXGroup;
+			children = (
+				D15B926216A2D9CF00C37EBF /* LICENSE */,
+				D15B926316A2D9CF00C37EBF /* README.md */,
+				D15B926416A2D9CF00C37EBF /* UITextView+PinchZoom.h */,
+				D15B926516A2D9CF00C37EBF /* UITextView+PinchZoom.m */,
+				D15B926616A2D9CF00C37EBF /* UITextView+PinchZoom.podspec */,
+			);
+			path = "UITextView-PinchZoom-master";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13031DB16804AF4001EECCC /* NitechStudentBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D130320616804AF4001EECCC /* Build configuration list for PBXNativeTarget "NitechStudentBoard" */;
+			buildPhases = (
+				D13031D816804AF4001EECCC /* Sources */,
+				D13031D916804AF4001EECCC /* Frameworks */,
+				D13031DA16804AF4001EECCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NitechStudentBoard;
+			productName = NitechStudentBoard;
+			productReference = D13031DC16804AF4001EECCC /* NitechStudentBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13031D316804AF4001EECCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kohei Hayakawa";
+			};
+			buildConfigurationList = D13031D616804AF4001EECCC /* Build configuration list for PBXProject "NitechStudentBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D13031D116804AF4001EECCC;
+			productRefGroup = D13031DD16804AF4001EECCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13031DB16804AF4001EECCC /* NitechStudentBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D13031DA16804AF4001EECCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D130320016804AF4001EECCC /* MasterViewController.xib in Resources */,
+				D130320316804AF4001EECCC /* DetailViewController.xib in Resources */,
+				D13032401680ADCE001EECCC /* BookmarkViewController.xib in Resources */,
+				D13032451680AE16001EECCC /* SettingViewController.xib in Resources */,
+				D13032641680B5CB001EECCC /* InfoPlist.strings in Resources */,
+				D13033421682BCE9001EECCC /* tabbar_board.png in Resources */,
+				D13033431682BCE9001EECCC /* tabbar_board@2x.png in Resources */,
+				D13033441682BCE9001EECCC /* tabbar_bookmark.png in Resources */,
+				D13033451682BCE9001EECCC /* tabbar_bookmark@2x.png in Resources */,
+				D13033461682BCE9001EECCC /* tabbar_setting.png in Resources */,
+				D13033471682BCE9001EECCC /* tabbar_setting@2x.png in Resources */,
+				5201742A1682DA8100BCBA71 /* icon-pull-to-refresh.png in Resources */,
+				5201742B1682DA8100BCBA71 /* icon-pull-to-refresh@2x.png in Resources */,
+				5201742C1682DA8100BCBA71 /* icon-release-to-refresh.png in Resources */,
+				5201742D1682DA8100BCBA71 /* icon-release-to-refresh@2x.png in Resources */,
+				5201742F1682DA8100BCBA71 /* SBPullToRefreshHeaderView.xib in Resources */,
+				D13033891683197D001EECCC /* Default-568h@2x.png in Resources */,
+				D130338A1683197D001EECCC /* Default.png in Resources */,
+				D130338B1683197D001EECCC /* Default@2x.png in Resources */,
+				D130339D16831D41001EECCC /* icon.png in Resources */,
+				D130339E16831D41001EECCC /* icon@2x.png in Resources */,
+				D15B926716A2D9CF00C37EBF /* LICENSE in Resources */,
+				D15B926816A2D9CF00C37EBF /* README.md in Resources */,
+				D15B926A16A2D9CF00C37EBF /* UITextView+PinchZoom.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D13031D816804AF4001EECCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13031F116804AF4001EECCC /* AppDelegate.m in Sources */,
+				D13031FA16804AF4001EECCC /* MasterViewController.m in Sources */,
+				D13031FD16804AF4001EECCC /* DetailViewController.m in Sources */,
+				D130323F1680ADCE001EECCC /* BookmarkViewController.m in Sources */,
+				D13032441680AE16001EECCC /* SettingViewController.m in Sources */,
+				D13032611680B5C3001EECCC /* main.m in Sources */,
+				D13032721680B954001EECCC /* Connection.m in Sources */,
+				D130327F1680C47E001EECCC /* Bookmark.m in Sources */,
+				D13032F7168219B1001EECCC /* User.m in Sources */,
+				5201742E1682DA8100BCBA71 /* SBPullToRefreshHeaderView.m in Sources */,
+				D15B926916A2D9CF00C37EBF /* UITextView+PinchZoom.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D13031FE16804AF4001EECCC /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13031FF16804AF4001EECCC /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		D130320116804AF4001EECCC /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D130320216804AF4001EECCC /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D130320416804AF4001EECCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D130320516804AF4001EECCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D130320716804AF4001EECCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitechStudentBoard/NitechStudentBoard-Prefix.pch";
+				INFOPLIST_FILE = "NitechStudentBoard/NitechStudentBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D130320816804AF4001EECCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitechStudentBoard/NitechStudentBoard-Prefix.pch";
+				INFOPLIST_FILE = "NitechStudentBoard/NitechStudentBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D13033A5168326E3001EECCC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kohei Hayakawa";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "100924C8-BDEE-4610-923D-1AF3BD704C36";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		D13033A6168326E3001EECCC /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NitechStudentBoard/NitechStudentBoard-Prefix.pch";
+				INFOPLIST_FILE = "NitechStudentBoard/NitechStudentBoard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D13031D616804AF4001EECCC /* Build configuration list for PBXProject "NitechStudentBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D130320416804AF4001EECCC /* Debug */,
+				D130320516804AF4001EECCC /* Release */,
+				D13033A5168326E3001EECCC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D130320616804AF4001EECCC /* Build configuration list for PBXNativeTarget "NitechStudentBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D130320716804AF4001EECCC /* Debug */,
+				D130320816804AF4001EECCC /* Release */,
+				D13033A6168326E3001EECCC /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13031D316804AF4001EECCC /* Project object */;
+}
